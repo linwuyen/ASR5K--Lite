@@ -9,6 +9,7 @@
 /**
  * Import the modules used in this configuration.
  */
+const device_support = scripting.addModule("/driverlib/device_support.js");
 const ipc = scripting.addModule("/driverlib/ipc.js");
 
 /**

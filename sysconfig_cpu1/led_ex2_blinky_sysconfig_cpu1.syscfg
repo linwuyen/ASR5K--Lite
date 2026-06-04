@@ -12,6 +12,7 @@
 const gpio  = scripting.addModule("/driverlib/gpio.js", {}, false);
 const gpio1 = gpio.addInstance();
 const gpio2 = gpio.addInstance();
+const device_support = scripting.addModule("/driverlib/device_support.js");
 const ipc   = scripting.addModule("/driverlib/ipc.js");
 
 /**
@@ -28,3 +29,5 @@ gpio2.gpioPin.$assign = "GPIO1";
 
 ipc.ipcRegisterFlag = ["IPC_FLAG31"];
 ipc.flagHandler31   = "IPC_SYNC";
+
+system.clockTree.EPWMCLKDIV.divideValue = 1;

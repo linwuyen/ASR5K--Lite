@@ -24,13 +24,8 @@ void main(void)
     Device_bootCPU2(BOOT_MODE_CPU2);
 
     //
-    // Boot CM (Cortex-M4) core
+    // ASR v0.1 architecture keeps CM disabled.
     //
-#ifdef _FLASH
-    Device_bootCM(BOOTMODE_BOOT_TO_FLASH_SECTOR0);
-#else
-    Device_bootCM(BOOTMODE_BOOT_TO_S0RAM);
-#endif
 
     //
     // Initialize GPIO
