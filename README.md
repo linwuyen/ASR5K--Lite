@@ -108,3 +108,13 @@ standard install path is:
 ```text
 C:/ti/c2000/C2000Ware_6_00_01_00
 ```
+
+
+---
+
+## Repository Classification
+
+- **Purpose:** public, reduced ASR5K demonstration workspace for portfolio and reproducible CCS examples.
+- **Status:** public showcase repository.
+- **Scope:** clean examples and non-confidential project structure only.
+- **Production status:** not the authoritative ASR5K firmware repository. Production development belongs in the private `ASR5K_V2_Function` repository.
